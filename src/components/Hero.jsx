@@ -2,20 +2,23 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="flex-col h-screen">
+    <section className="flex-col h-screen w-screen">
       <div className="flex-col text-center bg-red-600 flex mx-auto items-center align-center pb-2 py-1 font-bold">
-        <h1 className="text-white "> Alerta pra mulheres acima de 35 anos:</h1>
+        <h1 className="text-white ">
+          {" "}
+          Alerta pra quem sente ficou mais díficil com o passar dos anos:
+        </h1>
         <h1 className="font-medium text-white text-sm">
-          Crianças p/ cuidar, sem tempo pra academia e com medo da cintura fina
-          ser coisa do passado
+          já tentou de tudo? Existe um motivo, e não tem nada a ver com falta de
+          disciplina ou força de vontade..
         </h1>
       </div>
       <div className="max-w-5xl text-center items-center">
         <div className="">
           <div className="headline">
             <h2 className=" px-1 text-lg font-bold leading-tight text-white mt-12">
-              Elas ouviam comentários da família: mas viraram fofoca em 4
-              semanas após ativar o modo queima
+              Elas ouviam comentários da família até aprenderem esse mecanismo
+              simples ativado em casa...
             </h2>
 
             <p className="text-yellow-300 text-sm mb-6 mt-2">
