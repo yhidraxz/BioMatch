@@ -1,30 +1,17 @@
 import React, { useState, useEffect } from "react";
+import VturbPlayer from "../components/VturbPlayer";
 
 export default function Hero() {
   const [showCTA, setShowCTA] = useState(false);
 
   useEffect(() => {
-    // mostra o CTA e a parte de role após 5min40s
-    const timer = setTimeout(() => setShowCTA(true), 340000);
+    const timer = setTimeout(() => setShowCTA(true), 10000);
     return () => clearTimeout(timer);
-  }, []);
-
-  useEffect(() => {
-    // injeta o script da Vturb
-    const script = document.createElement("script");
-    script.src =
-      "https://scripts.converteai.net/a42e650c-b3dd-42c7-a94e-e132b603b19f/players/690557868764bca5bd179fd2/v4/player.js";
-    script.async = true;
-    document.head.appendChild(script);
-
-    // cleanup para remover o script se o componente desmontar
-    return () => {
-      document.head.removeChild(script);
-    };
   }, []);
 
   return (
     <section className="flex-col h-screen">
+      {/* Cabeçalho */}
       <div className="flex-col text-center bg-red-600 flex mx-auto items-center align-center pb-2 py-1 font-bold">
         <h1 className="text-white">
           Alerta pra quem sente ficou mais díficil com o passar dos anos:
@@ -47,25 +34,15 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* Player da VTurb */}
-        <div
-          className="flex justify-center w-full aspect-video mt-10"
-          dangerouslySetInnerHTML={{
-            __html: `
-              <vturb-smartplayer
-                id="vid-690557868764bca5bd179fd2"
-                style="display: block; margin: 0 auto; width: 100%;"
-              ></vturb-smartplayer>
-            `,
-          }}
-        />
+        {/* Player isolado */}
+        <VturbPlayer />
 
         {/* CTA temporizado */}
         {showCTA && (
           <>
             <div className="flex justify-center mt-8 sm:flex-row sm:items-center gap-3 transition-all duration-700">
               <a
-                href="#cta"
+                href="https://pay.kiwify.com.br/ycz35VV"
                 className="justify-center align-center btn text-white bg-green-500 btn-lg w-2/3 animate-bounce"
               >
                 Adquira o método

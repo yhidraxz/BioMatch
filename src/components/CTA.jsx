@@ -14,7 +14,7 @@ export default function CTA() {
         </p>
         <div className="flex justify-center mt-8 sm:flex-row ">
           <a
-            href="#cta"
+            href="https://pay.kiwify.com.br/ycz35VV"
             className="animate-bounce justify-center align-center btn text-white bg-green-500 btn-xl"
           >
             Adquirir o método
