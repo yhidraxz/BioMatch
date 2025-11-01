@@ -1,7 +1,7 @@
 import React from "react";
 
 const FeatureCard = ({ title, desc }) => (
-  <div className="p-6 bg-zinc-900/60 border border-zinc-800 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+  <div className=" p-6 bg-zinc-900/60 border border-zinc-800 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
     <h3 className="text-white font-semibold text-lg leading-snug">{title}</h3>
     {desc && <p className="text-sm text-zinc-400 mt-2">{desc}</p>}
   </div>
@@ -9,7 +9,7 @@ const FeatureCard = ({ title, desc }) => (
 
 export default function Features() {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white md:mt-64">
       {/* Seção 1 */}
       <section id="features" className="py-16">
         <div className="mx-auto max-w-5xl px-6">

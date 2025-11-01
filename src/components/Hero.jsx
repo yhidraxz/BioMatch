@@ -10,9 +10,9 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="flex-col h-screen">
+    <section className="flex flex-col h-screen">
       {/* Cabeçalho */}
-      <div className="flex-col text-center bg-red-600 flex mx-auto items-center align-center pb-2 py-1 font-bold">
+      <div className="md:w-screen flex-col text-center bg-red-600 flex mx-auto items-center align-center pb-2 py-1 font-bold">
         <h1 className="text-white">
           Alerta pra quem sente ficou mais díficil com o passar dos anos:
         </h1>
@@ -34,8 +34,9 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* Player isolado */}
-        <VturbPlayer />
+        <div className="w-full max-w-4xl mx-auto aspect-video relative">
+          <VturbPlayer />
+        </div>
 
         {/* CTA temporizado */}
         {showCTA && (
