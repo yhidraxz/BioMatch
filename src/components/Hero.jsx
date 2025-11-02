@@ -6,7 +6,7 @@ export default function Hero() {
 
   //380000
   useEffect(() => {
-    const timer = setTimeout(() => setShowCTA(true), 10000);
+    const timer = setTimeout(() => setShowCTA(true), 380000);
     return () => clearTimeout(timer);
   }, []);
 
