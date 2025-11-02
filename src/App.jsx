@@ -15,7 +15,7 @@ export default function App() {
     // Tempo em milissegundos (ex: 60000 = 1 minuto)
     const timer = setTimeout(() => {
       setShowRest(true);
-    }, 340000); // aqui define o tempo pra liberar o resto da página
+    }, 380000); // aqui define o tempo pra liberar o resto da página
     //340000
     return () => clearTimeout(timer);
   }, []);
