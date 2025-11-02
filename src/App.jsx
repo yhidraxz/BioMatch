@@ -15,13 +15,13 @@ export default function App() {
     // Tempo em milissegundos (ex: 60000 = 1 minuto)
     const timer = setTimeout(() => {
       setShowRest(true);
-    }, 380000); // aqui define o tempo pra liberar o resto da página
-    //340000
+    }, 10000); // aqui define o tempo pra liberar o resto da página
+    //380000
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-black">
+    <div className="min-h-screen flex flex-col bg-[#F7F7F7]">
       <main className="flex-grow">
         <Hero />
 

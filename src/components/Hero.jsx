@@ -4,57 +4,59 @@ import VturbPlayer from "../components/VturbPlayer.jsx";
 export default function Hero() {
   const [showCTA, setShowCTA] = useState(false);
 
+  //380000
   useEffect(() => {
-    const timer = setTimeout(() => setShowCTA(true), 380000);
+    const timer = setTimeout(() => setShowCTA(true), 10000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <section className="flex flex-col h-screen">
+    <section className="flex flex-col min-h-screen bg-[#FFFDF9] text-center">
       {/* Cabeçalho */}
-      <div className="md:w-screen flex-col text-center bg-red-600 flex mx-auto items-center align-center pb-2 py-1 font-bold">
-        <h1 className="text-white">
-          Alerta pra quem sente ficou mais díficil com o passar dos anos:
+      <div className="bg-[#FFF1DD] text-[#D97706] font-semibold py-2 shadow-sm">
+        <h1 className="text-sm md:text-base">
+          Pra quem sente que ficou mais difícil com o passar dos anos:
         </h1>
-        <h1 className="font-medium text-white text-sm">
+        <p className="text-xs md:text-sm font-normal mt-1 text-[#B46904]">
           já tentou de tudo? Existe um motivo, e não tem nada a ver com falta de
           disciplina ou força de vontade..
-        </h1>
+        </p>
       </div>
 
-      <div className="max-w-5xl text-center items-center mx-auto">
-        <div className="headline">
-          <h2 className="px-1 text-lg font-bold leading-tight text-white mt-12">
-            Elas ouviam comentários da família até aprenderem esse mecanismo
-            simples ativado em casa...
-          </h2>
+      {/* Conteúdo */}
+      <div className="flex flex-col justify-center items-center px-4 mt-14">
+        <h2 className="text-[#1C1C1C] font-bold text-lg md:text-xl leading-snug max-w-md md:max-w-2xl">
+          Elas ouviam comentários da família até aprenderem esse mecanismo...
+        </h2>
 
-          <p className="text-yellow-300 text-sm mb-6 mt-2">
-            (Sem remédios, sem academia, só com alguns minutos por dia em casa)
-          </p>
-        </div>
+        <p className="text-[#4A4A4A] text-xs md:text-sm mb-10 mt-4">
+          (Sem remédios, sem academia, só com alguns minutos por dia em casa)
+        </p>
 
-        <div className="w-full max-w-4xl mx-auto aspect-video relative">
-          <VturbPlayer />
+        {/* PLAYER CENTRALIZADO */}
+        <div className="w-full flex justify-center">
+          <div className="w-full max-w-[720px] aspect-video rounded-lg overflow-hidden shadow-md border border-[#F1E7D6]">
+            <VturbPlayer />
+          </div>
         </div>
 
         {/* CTA temporizado */}
         {showCTA && (
           <>
-            <div className="flex justify-center mt-8 sm:flex-row sm:items-center gap-3 transition-all duration-700">
+            <div className="flex justify-center mt-10">
               <a
                 href="https://pay.kiwify.com.br/ycz35VV"
-                className="justify-center align-center btn text-white bg-green-500 btn-lg w-2/3 animate-bounce"
+                className="bg-[#3BAA7A] hover:bg-[#2E8C62] text-white font-semibold py-3 px-8 rounded-sm shadow-lg hover:shadow-xl transition-all duration-300 animate-bounce"
               >
                 Adquira o método
               </a>
             </div>
 
-            <div className="mt-24 flex justify-center transition-opacity duration-700">
-              <div className="flex flex-col items-center text-white">
+            <div className="mt-16 flex justify-center">
+              <div className="flex flex-col items-center text-[#555]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -66,7 +68,7 @@ export default function Hero() {
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-                <p className="text-xs text-white/80 mt-1">Role para ver mais</p>
+                <p className="text-xs mt-1">Role para ver mais</p>
               </div>
             </div>
           </>
