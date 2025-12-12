@@ -84,10 +84,10 @@ export default function Testimonials() {
         </div>
         <div className="flex justify-center mt-8 sm:flex-row sm:items-center gap-3">
           <a
-            href="https://pay.kiwify.com.br/ycz35VV"
+            href="#a"
             className="justify-center align-center btn text-white bg-green-500 btn-xl"
           >
-            Adquirir o método
+            Entrar pro desafio
           </a>
         </div>
       </div>

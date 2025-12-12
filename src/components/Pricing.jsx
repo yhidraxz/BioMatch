@@ -13,10 +13,10 @@ const PriceCard = ({ title, price, origPrice, perks }) => (
       ))}
     </ul>
     <a
-      href="https://pay.kiwify.com.br/ycz35VV"
+      href="#a"
       className="justify-center align-center btn text-white bg-green-500 btn-xl "
     >
-      Adquirir o método
+      Entrar no desafio
     </a>
   </div>
 );

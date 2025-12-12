@@ -65,7 +65,7 @@ export default function Hero() {
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-                <p className="text-xs mt-1">Role para ver mais</p>
+                <p className="text-xs mt-1 text-black">Role para ver mais</p>
               </div>
             </div>
           </>

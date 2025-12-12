@@ -27,6 +27,9 @@ export default function CTA() {
             <div className="text-sm text-gray-500">Garantia</div>
           </div>
           <div>
+            <div className="text-lg font-bold text-yellow-300">
+              Acesso Mensal
+            </div>
             <div className="text-sm text-gray-500">Investimento único</div>
           </div>
         </div>
