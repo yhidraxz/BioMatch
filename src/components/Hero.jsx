@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import VturbPlayer from "../components/VturbPlayer.jsx";
 
 export default function Hero() {
   const [showCTA, setShowCTA] = useState(false);
