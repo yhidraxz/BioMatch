@@ -6,8 +6,8 @@ export default function Footer() {
       <div className="container-mobile mx-auto max-w-5xl py-8">
         <div className="flex flex-col items-center justify-between gap-4">
           <div className="text-sm ">
-            &copy; {new Date().getFullYear()} Método BioMatch. Todos os direitos
-            reservados.
+            &copy; {new Date().getFullYear()} Comunidade Wilson. Todos os
+            direitos reservados.
           </div>
           <div className="flex items-center gap-4">
             <a className="text-sm  hover:text-brand-600" href="#">

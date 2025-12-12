@@ -26,18 +26,16 @@ export default function Hero() {
       {/* Conteúdo */}
       <div className="flex flex-col justify-center items-center px-4 mt-14">
         <h2 className="text-[#1C1C1C] font-bold text-lg md:text-xl leading-snug max-w-md md:max-w-2xl">
-          Elas ouviam comentários da família até aprenderem esse mecanismo...
+          Comunidade de emagrecimento, perca 4kgs em somente 8 semanas...
         </h2>
 
         <p className="text-[#4A4A4A] text-xs md:text-sm mb-10 mt-4">
-          (Sem remédios, sem academia, só com alguns minutos por dia em casa)
+          (Sem remédios, sem dietas malucas, sem efeito sanfona)
         </p>
 
         {/* PLAYER CENTRALIZADO */}
         <div className="w-full flex justify-center">
-          <div className="w-full max-w-[720px] aspect-video rounded-lg overflow-hidden shadow-md border border-[#F1E7D6]">
-            <VturbPlayer />
-          </div>
+          <div className="w-full max-w-[720px] aspect-video rounded-lg overflow-hidden shadow-md border border-[#F1E7D6]"></div>
         </div>
 
         {/* CTA temporizado */}
@@ -45,7 +43,7 @@ export default function Hero() {
           <>
             <div className="flex justify-center mt-10">
               <a
-                href="https://pay.kiwify.com.br/ycz35VV"
+                href="#a"
                 className="bg-[#3BAA7A] hover:bg-[#2E8C62] text-white font-semibold py-3 px-8 rounded-sm shadow-lg hover:shadow-xl transition-all duration-300 animate-bounce"
               >
                 Adquira o método

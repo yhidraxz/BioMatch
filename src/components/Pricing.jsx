@@ -37,7 +37,7 @@ export default function Pricing() {
           <PriceCard
             title="SOMENTE HOJE:"
             origPrice="R$ 300,00"
-            price="R$ 14,00"
+            price="R$ 147,00"
             perks={[]}
           />
         </div>

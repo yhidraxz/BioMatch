@@ -32,12 +32,12 @@ const Question = ({ q, a }) => {
 export default function FAQ() {
   const faqs = [
     {
-      q: "Como funciona o método?",
-      a: "Você vai aprender técnicas simples e práticas pra aplicar no seu dia a dia e começar a ter resultados",
+      q: "Como funciona a comunidade?",
+      a: "Você vai aprender tudo que precisa pra no seu dia a dia e começar a ter resultados de verdade",
     },
     {
       q: "Tem garantia?",
-      a: "Sim! Se você aplicar todas as técnicas e não se sentir satisfeita, damos todo seu dinheiro de volta",
+      a: "Sim! Se você aplicar tudo e não se sentir satisfeita com os resultados, damos todo seu dinheiro de volta",
     },
     {
       q: "Quanto tempo pra ver resultados?",

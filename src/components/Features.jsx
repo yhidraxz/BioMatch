@@ -15,7 +15,7 @@ export default function Features() {
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center mb-10">
             <h4 className="text-2xl font-bold">
-              Ative o modo queima - Transforme seu corpo naturalmente
+              Entre no desafio - Transforme seu corpo naturalmente
             </h4>
             <p className="mt-3 text-zinc-400 text-base max-w-2xl mx-auto">
               Centenas de mulheres estão emagrecendo sem sofrimento ou dietas
@@ -24,9 +24,9 @@ export default function Features() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
-            <FeatureCard title="Aprenda a ativar o modo queima, e emagreça até enquanto descansa" />
+            <FeatureCard title="Receba conteúdo de verdade e aprenda realmente como funciona o emagrecimento" />
             <FeatureCard title="Reprograme o corpo pra usar gordura como fonte de energia" />
-            <FeatureCard title="Ative o modo quiema, e fique magra pra sempre" />
+            <FeatureCard title="Tenha resultados rápido, e mantenha de uma vez por todas" />
           </div>
         </div>
       </section>
@@ -39,9 +39,9 @@ export default function Features() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
-            <FeatureCard title="Elimine gordura localizada na barriga, cintura e braços com técnicas simples " />
+            <FeatureCard title="Elimine gordura localizada na barriga, cintura e braços" />
             <FeatureCard title="Diferente de exercícios intensos e dietas restritivas — você vai ter ainda mais disposição e dormir melhor" />
-            <FeatureCard title="Conquiste um corpo de dar inveja, e receba elogios (até do marido) nas primeiras semanas" />
+            <FeatureCard title="Conquiste um corpo de dar inveja, e veja resultados nas primeiras semanas" />
           </div>
         </div>
       </section>
@@ -56,9 +56,9 @@ export default function Features() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
-            <FeatureCard title="Faça tudo em casa — Pra quem não tem tempo pra academia e treinos longos" />
+            <FeatureCard title="Treinos em casa — Pra quando não conseguir ir pra academia" />
             <FeatureCard title="100% natural e seguro, baseado na ciência e mais de 20 anos de experiência, aplicado por +200 mulheres" />
-            <FeatureCard title="Ebook com etapas práticas pra ativar o modo queima de gordura" />
+            <FeatureCard title="Plano prático passo a passo pra queimar gordura" />
           </div>
         </div>
       </section>
